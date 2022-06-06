@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="RATIARIVELO Nekena Rayane" />
+    <meta name="description" content="Golden Spiral create with canvas." />
+    <meta name="keywords" content="canvas, js, golden spiral, golden number"/>
+    <title>Golden Spiral</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            /* background-color: #151515; */
+            background-color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script type="module">
+        import App from './lib/app.js';
+
+        const options = { 
+            color: '#151515', 
+            background: "white", 
+            borderColor: '#0000001a',
+        };
+        
+        const app = new App(options);
+        app.start();
+    </script>
+</body>
+</html>
